@@ -1,0 +1,362 @@
+* {
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+    list-style: none;
+    user-select: none;
+}
+
+::-webkit-scrollbar {
+    display: none;
+}
+
+/* 导航栏 */
+
+nav {
+    width: 100vw;
+    height: 70px;
+    position: fixed;
+    display: flex;
+    color: #d4d4d4;
+    transition: 0.5s;
+    align-items: center;
+    justify-content: space-between;
+}
+
+nav:hover,
+.nav2 {
+    background: rgb(39, 39, 39);
+    color: #d4d4d4;
+    box-shadow: 0px 3px 10px 3px rgba(53, 53, 53, 0.748);
+}
+
+nav h2 {
+    margin-left: 2vw;
+    letter-spacing: 2px;
+}
+
+nav ul {
+    margin-right: 2vw;
+}
+
+nav ul li {
+    float: left;
+    width: 80px;
+    text-align: center;
+    cursor: pointer;
+    margin: 0 5px 0 5px;
+}
+
+/* 导航栏 */
+
+/* 头部 */
+
+header {
+    width: 100vw;
+    height: auto;
+}
+
+.img {
+    overflow: hidden;
+    height: 100vh;
+    background: url(../img/bg2.png);
+    /* 背景图片不重复 */
+    background-repeat: no-repeat;
+    /* 背景图片位置：居中 */
+    background-position: center;
+    /* 背景图片固定 */
+    background-attachment: fixed !important;
+    background-size: cover;
+    /* 禁止用户误选中 */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.img .txt {
+    margin-left: 10vw;
+    color: #d4d4d4;
+}
+
+.img .txt h1 {
+    font-size: 4.5em;
+    margin: 0 0 10px 0;
+    letter-spacing: 20px;
+}
+
+.img .txt p {
+    font-size: 1.5em;
+    font-weight: bolder;
+    letter-spacing: 5px;
+    margin-bottom: 15px;
+}
+
+.img .txt p span {
+    color: rgb(255, 50, 129);
+}
+
+.img .txt button {
+    width: 250px;
+    height: 60px;
+    border-radius: 10px;
+    border: none;
+    color: #d4d4d4;
+    background: rgb(66, 66, 66);
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+.img .txt button:hover {
+    background: rgb(24, 24, 24);
+}
+
+/* 头部 */
+
+/* 介绍 */
+
+.js {
+    width: 100vw;
+    height: 50vh;
+    background: #333333;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.jsl {
+    color: #d4d4d4;
+    width: 250px;
+    height: 350px;
+    border-radius: 10px;
+    background: #1f1f1f;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    text-align: center;
+    transition: 0.5s;
+}
+
+.jsl i {
+    font-size: 5em;
+}
+
+.jsl .js-text {
+    font-size: 1.5em;
+}
+
+.jsl:hover {
+    box-shadow: 0pc 0px 10px 5px rgba(80, 80, 80, 0.8);
+}
+
+/* 介绍 */
+
+/* 主体 */
+main {
+    background: #333333;
+}
+
+/* 主体 */
+
+/* 详细介绍 */
+
+.xx {
+    color: #d4d4d4;
+    width: 100vw;
+    height: 50vh;
+    background: #333333;
+    display: flex;
+    justify-content: center;
+}
+
+.xx-text {
+    width: 80vw;
+    height: 400px;
+    background: #1f1f1f;
+    border-radius: 10px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.xx-text h1 {
+    margin: 0 0 0px 0;
+    font-size: 3em;
+}
+
+.xx-text h2 {
+    font-size: 25px;
+    color: gray;
+    margin-bottom: 10px;
+}
+
+.xx img {
+    width: 400px;
+    height: 150px;
+}
+
+/* 详细介绍 */
+
+/* 底部 */
+
+footer {
+    color: #d4d4d4;
+    width: 100vw;
+    height: auto;
+    text-align: center;
+    background: #333333;
+}
+
+/* 底部 */
+
+/* 加入 */
+
+.jr,
+.lxs,
+.about {
+    color: #d4d4d4;
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 100;
+}
+
+.jr-text,
+.lx-text,
+.about-text {
+    width: 450px;
+    height: 350px;
+    background: #1a1a1a;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    box-shadow: 0pc 0px 10px 5px rgba(80, 80, 80, 0.8);
+}
+
+.jr-img {
+    width: 150px;
+    height: 150px;
+}
+
+.jr img {
+    width: 100%;
+    height: 100%;
+}
+
+.gb,
+.lx-gb,
+.about-gb {
+    font-size: 2em;
+    font-weight: bolder;
+    cursor: pointer;
+}
+
+.jr button {
+    width: 200px;
+    height: 40px;
+    border: none;
+    background: rgb(66, 66, 66);
+    color: rgb(255, 255, 255);
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 0.4s;
+}
+
+.jr button:hover {
+    background: rgb(24, 24, 24);
+}
+
+/* 加入 */
+
+/* 加载动画 */
+.loading {
+    width: 100%;
+    height: 100vh;
+    background: #333333;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    display: flex;
+    align-items: center;
+}
+
+.loading::before {
+    content: "";
+    position: absolute;
+    width: 80px;
+    height: 80px;
+    background: #202020;
+    left: 20%;
+    transform: translateX(-50%) rotate(0);
+    border-radius: 20px;
+    animation: loading 4s infinite linear;
+}
+
+@keyframes loading {
+    from {
+        transform: translate(-50%) rotate(0deg);
+    }
+
+
+    50% {
+        left: 80%;
+    }
+
+    to {
+        transform: translate(-50%) rotate(1440deg);
+    }
+}
+
+/* 加载动画 */
+
+/* 响应式 */
+@media (max-width: 1080px) {
+    main {
+        background: #333333;
+    }
+
+    nav {
+        align-items: center;
+        justify-content: center;
+    }
+
+    nav h2 {
+        display: none;
+    }
+
+    nav ul {
+        margin: 0;
+    }
+
+    .js {
+        margin-top: 5%;
+        height: auto;
+        flex-direction: column;
+    }
+
+    .jsl {
+        color: #d4d4d4;
+        margin: 5% 0 5% 0;
+    }
+
+    .xx {
+        color: #d4d4d4;
+        height: auto;
+        margin-bottom: 10%;
+    }
+
+    .xx-text {
+        height: 500px;
+    }
+}
+
+/* 响应式 */

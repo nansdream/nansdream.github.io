@@ -44,9 +44,10 @@
             <h1>
                 关于我们
             </h1>
-            <p>腐竹：鹊楠、Auog Six</p>
-            <p>技术：Auog Six</p>
-            <p>前端：鹊楠 PS：(赶出来的前端，偏简陋)</p>
+            <p>腐竹：鹊楠</p>
+            <p>技术：修了一天bug</p>
+            <p>前端：鹊楠</p>
+            <p>前端优化：修了一天bug</p>
             <p>一群追逐梦想的孩子罢了</p>
         </div>
     </div>
@@ -81,7 +82,7 @@
                     基岩版插件生存服务器
                 </p>
                 <p>
-                    版本 : <span>1.19+</span>
+                    版本 : <span>1.20+</span>
                 </p>
                 <button class="jrwm">
                     加入我们
@@ -112,7 +113,8 @@
                 </div>
                 <p>
                     2核服务器<br />
-                    (基岩版服务器足够了)
+                    (基岩版服务器足够了)<br />
+                    <span style="color: gray;">*你说的对但是原神</span>
                 </p>
             </div>
             <div class="jsl">
@@ -124,7 +126,8 @@
                 </div>
                 <p>
                     优秀的服务器管理员们<br />
-                    会听取玩家建议，拒绝霸权
+                    会听取玩家建议，拒绝霸权<br />
+                    <del>*技术注释:管理其实会霸权</del>
                 </p>
             </div>
         </div>
@@ -132,11 +135,11 @@
             <div class="xx-text">
                 <h1>楠&nbsp;之&nbsp;梦</h1>
                 <h2>Nans&nbsp;&nbsp;Dream</h3>
-                <p>
-                    楠之梦成立于&nbsp;<b>2022.4.7</b>&nbsp;,是一个微型服务器，经历过风风雨雨；<br />
-                    每当寒暑假来临时，楠之梦又会重新开服。也许，当寒暑假结束时，楠的梦又将结束了
-                </p>
-                <img src="img/logo2.jpg" alt="">
+                    <p>
+                        楠之梦成立于&nbsp;<b>2022.4.7</b>&nbsp;,是一个微型服务器，经历过风风雨雨；<br />
+                        <del>腐竹其实管生不管养</del>
+                    </p>
+                    <img src="img/logo2.png" alt="This is a logo">
             </div>
         </div>
     </main>
@@ -149,6 +152,14 @@
 <script src="js/index.js"></script>
 
 <script>
+    
+    // 暗色判断
+    const isDarkTheme = window.matchMedia("(prefers-color-scheme: dark)");
+    if (isDarkTheme.matches) {
+        var link = document.getElementsByTagName('link')[0];
+        link.setAttribute("href","css/dark-mode.css");
+    }
+
 
 </script>
 
